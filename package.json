@@ -1,6 +1,6 @@
 {
   "name": "react-fuse-dropdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React dropdown using fuse to get randon  initial value",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,9 +13,16 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
-  "keywords": ["react", "components", "fuse","dropdown"],
+  "keywords": [
+    "react",
+    "components",
+    "fuse",
+    "dropdown"
+  ],
   "author": "Ali Abbas",
   "license": "MIT",
   "homepage": "https://github.com/ali1452/react-fuse-dropdown#readme",
@@ -41,4 +48,3 @@
     "fuse.js": "^7.1.0"
   }
 }
-
