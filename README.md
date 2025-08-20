@@ -11,6 +11,8 @@ npm i react-fuse-dropdown
 rarandomString: random string value to find near or exact option in select box
 data: array of object using for dropdown options
 onChange: a callback function to return back value for your logic
+variant: "primary" | "ghost"
+label: string value for lable 
 
 
 

@@ -52,8 +52,15 @@ export const DropdownInput = React.forwardRef<HTMLButtonElement, InputProps>(
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const value = e.target.value;
-        setSelectedValue(value);
-        onChange(value);
+         const result = fuseSearchPartner(value);
+         if (result) {
+            setSelectedValue(result.item.name);
+            onChange(result.item);
+         }else{
+            setSelectedValue('');
+            onChange('');
+         }
+        
     };
 
     return (
@@ -61,7 +68,7 @@ export const DropdownInput = React.forwardRef<HTMLButtonElement, InputProps>(
             <label>{label}</label>
             <select onChange={handleChange} value={selectedValue} className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 {data.map((item) => (
-                    <option className="text-black" key={item.id} value={item.name}>
+                    <option key={item.id} value={item.name}>
                     {item.name}
                     </option>
                 ))}
