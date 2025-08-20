@@ -6,11 +6,13 @@ declare const DropdownInput: React.ForwardRefExoticComponent<React.ButtonHTMLAtt
     label?: string;
     onChange: (value: string | {
         name: string;
-        id: number;
+        id: number | string;
+        [key: string]: unknown;
     }) => void;
     data: {
         name: string;
-        id: number;
+        id: number | string;
+        [key: string]: unknown;
     }[];
 } & React.RefAttributes<HTMLButtonElement>>;
 
