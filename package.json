@@ -1,6 +1,6 @@
 {
   "name": "react-fuse-dropdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React dropdown using fuse to get randon  initial value",
   "type": "module",
   "main": "./dist/index.cjs",
