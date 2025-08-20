@@ -18,13 +18,13 @@
   "keywords": ["react", "components", "fuse","dropdown"],
   "author": "Ali Abbas",
   "license": "MIT",
-  "homepage": "https://github.com/yourname/my-react-package#readme",
+  "homepage": "https://github.com/ali1452/react-fuse-dropdown#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/my-react-package.git"
+    "url": "git+https://github.com/ali1452/react-fuse-dropdown.git"
   },
   "bugs": {
-    "url": "https://github.com/yourname/my-react-package/issues"
+    "url": "https://github.com/ali1452/react-fuse-dropdown/issues"
   },
   "scripts": {
     "build": "tsup",
